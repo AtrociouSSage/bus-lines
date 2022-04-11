@@ -1,0 +1,14 @@
+
+<div class = "fx">
+{{#each linije}}
+    <div class="card" data-content="{{destinacija}}">
+       <img src="{{imeslike}}" style ="width: 450px; height: 200px;" />
+     <div class="card-body">
+       <span class="tag tag-pink">Polasci</span>
+       <h4>
+         <u>{{destinacija}}</u>
+       </h4>
+       <a href = "linije/{{_id}}/detalji"><button class = "dugmadi">Provjeri</button></a>
+      </div>
+     </div>
+{{/each}}

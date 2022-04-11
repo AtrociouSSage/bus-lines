@@ -1,0 +1,195 @@
+body {
+  background-color: #caffac;
+}
+
+.Search {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Search .searchbox {
+  margin-left: 50vw;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 53px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  overflow: hidden;
+  margin-top: 3vh;
+  margin-left: 36vw;
+}
+
+.Search .searchbox .searchbox__input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #24233A;
+  padding: 15px;
+  color: #24233A;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.4s linear;
+  transition: 0.2s linear;
+}
+
+.Search .searchbox .searchbox__input::-webkit-input-placeholder {
+  color: #24233A;
+}
+
+.Search .searchbox .searchbox__input:-ms-input-placeholder {
+  color: #24233A;
+}
+
+.Search .searchbox .searchbox__input::-ms-input-placeholder {
+  color: #24233A;
+}
+
+.Search .searchbox .searchbox__input::placeholder {
+  color: #24233A;
+}
+
+.Search .searchbox .searchbox__icon {
+  position: absolute;
+  right: calc(53px / 2);
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.Search .searchbox .searchbox__icon path {
+  fill: #00F494;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.Search .searchbox:focus-within {
+  max-width: 500px;
+}
+
+.Search .searchbox:focus-within .searchbox__input {
+  background-color: #FFF;
+  padding-right: 50px;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Search .searchbox:focus-within .searchbox__icon path {
+  fill: #24233A;
+}
+
+.Search .searchbox:focus-within:focus-within {
+  max-width: 500px;
+}
+
+.Search .searchbox:focus-within:focus-within .searchbox__input {
+  background-color: #FFF;
+  padding-right: 50px;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Search .searchbox:focus-within:focus-within .searchbox__icon path {
+  fill: #24233A;
+}
+/*# sourceMappingURL=SearchIkonica.css.map */
+
+@media only screen and (max-width: 600px){
+  .Search .searchbox {
+    margin-left: 20vw;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 53px;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+    overflow: hidden;
+    margin-top: 3vh;
+    margin-left: 10vw;
+  }
+
+  .Search .searchbox .searchbox__input {
+    display: block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #24233A;
+    padding: 15px;
+    color: #24233A;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.4s linear;
+    transition: 0.2s linear;
+  }
+  
+  .Search .searchbox .searchbox__input::-webkit-input-placeholder {
+    color: #24233A;
+  }
+  
+  .Search .searchbox .searchbox__input:-ms-input-placeholder {
+    color: #24233A;
+  }
+  
+  .Search .searchbox .searchbox__input::-ms-input-placeholder {
+    color: #24233A;
+  }
+  
+  .Search .searchbox .searchbox__input::placeholder {
+    color: #24233A;
+  }
+  
+  .Search .searchbox .searchbox__icon {
+    position: absolute;
+    right: calc(53px / 2);
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+  
+  .Search .searchbox .searchbox__icon path {
+    fill: #00F494;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  
+  .Search .searchbox:focus-within {
+    max-width: 310px;
+  }
+  
+  .Search .searchbox:focus-within .searchbox__input {
+    background-color: #FFF;
+    padding-right: 50px;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .Search .searchbox:focus-within .searchbox__icon path {
+    fill: #24233A;
+  }
+  
+  .Search .searchbox:focus-within:focus-within {
+    max-width: 310px;
+  }
+  
+  .Search .searchbox:focus-within:focus-within .searchbox__input {
+    background-color: #FFF;
+    padding-right: 50px;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+}

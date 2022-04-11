@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="Slike/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/stylesheets/SearchIkonica.css">
+    <link rel = "stylesheet" href = "/stylesheets/Index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusLines</title>
+</head>
+<body>
+    </header>
+<h1 class="Naslov">BusLines</h1>
+</div>
+
+<!--Tab Switch sistem-->
+{{#if isHome}}
+<div class = "FlexZaDugmadi">
+  <button class="tabdugme1 tabdugme" id="Otvoren" onclick="PromijeniTab(event, 'KantonalneLinije')">Opstinske linije</button>
+  <button class="tabdugme2 tabdugme" onclick="PromijeniTab(event, 'OpstinskeLinije')">Uskoro...</button>
+</div>
+<h1 class = "kofolTekst">Polasci</h1>
+<div class = "wrapper">
+    <!--Search filter ide ovdje-->
+    <div class="Search">
+		<div class="searchbox">
+			<input id = "input" type="text" class="searchbox__input" onkeyup="filtriraj()" placeholder="Pretraži gradove..." />
+			<svg class="searchbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+				<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17s-17-7.626-17-17S14.61,6,23.984,6z" />
+			</svg>
+		</div>
+{{/if}}
+
+{{{body}}}
+<!--Kantonalne linije-->
+<div id="KantonalneLinije" class="tabcontent">
+{{#if isHome}}
+	{{>linije}}
+{{/if}}
+</div>
+</body>
+    <script src="/javascripts/Index.js"></script>
+</section>
+</html>

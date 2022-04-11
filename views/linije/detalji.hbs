@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/stylesheets/SearchIkonica.css">
+    <link rel = "stylesheet" href = "/stylesheets/Sljedeca.css">
+    <link rel = "stylesheet" href="/stylesheets/Polasci.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobuske linije opštine Travnik</title>
+</head>
+<body>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 class = "hero-naslov">{{linija.destinacija}}</h1>
+        </div>
+      </div>
+      <div class = "kontent">
+<h1 class = "PraviNaslov">Polasci za {{linija.destinacija}}</h1>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Prva linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;"> {{linija.p1}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.4vw;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Druga linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;"> {{linija.p2}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 15px;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Treća linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;">{{linija.p3}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 15px;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Četvrta linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+     <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;">{{linija.p4}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+          <h2 style="margin-top: 5px; margin-left: 2px; font-size: 15px;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Peta linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;"> {{linija.p5}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+          <h2 style="margin-top: 5px; margin-left: 2px; font-size: 15px;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class = "kartica">
+  <div class = "Prvi"><h2 class = "PrviH2">Šesta linija</h2></div>
+  <div class = "Drugi treciRed">
+    <div class = "Treci">
+      <h2 style="margin-top: 5px; margin-left: 2px; font-size: 1.2vw;">Vrijeme polaska: </h2>
+    </div>
+  <div class = "Cetvrti">
+      <h2 style="margin-top: 5px; font-size: 20px;">{{linija.p6}}</h2>
+  </div>
+  </div>
+  <div class = "Drugi treciRed Drugi2">
+    <div class = "Treci">
+          <h2 style="margin-top: 5px; margin-left: 2px; font-size: 15px;">Odredište: </h2>
+    </div>
+    <div class = "Cetvrti zadnjaStranica">
+        <h2 style = "font-size: 15px; margin-top: 5px;">{{linija.odrediste}}</h2>
+    </div>
+  </div>
+</div>
+<div class = "wrapperZaDugmadi">
+  <a href="/"><button class = "nazadNa">Nazad na početnu</button></a>
+      </div>
+      <br>
+      <br>
+      </div>
+      <br>
+      <br>
+</body>
+</section>
+</html>

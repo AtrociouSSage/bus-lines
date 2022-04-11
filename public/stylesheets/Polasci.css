@@ -1,0 +1,103 @@
+
+.kartica{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 3vw;
+}
+
+.Prvi{
+  border: #474747 2px double;
+  background-color: #212121;
+  color: aliceblue;
+  width: 12.5vw;
+  height: 45px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+
+.Drugi{
+    display: flex;
+    width: 21vw;
+}
+
+.Drugi2{
+    width: 32vw;
+}
+
+.Treci{
+    width: 15.5vw;
+    background-color: #4F5165;
+    height: 45px;
+    border: #212121 2px solid;
+    color: aliceblue;
+    font-size: 0.8vw;
+}
+
+.Cetvrti{
+    width: 18.5vw;
+    height: 45px;
+    background-color: #f8f9fa;
+    border: #212121 2px solid;
+    color: #212121;
+    text-align: center;
+    }   
+
+    .PrviH2{
+        margin-top: 2px;
+        font-size: 1.3vw;
+    }
+
+    .zadnjaStranica{
+    border-radius: 0px 0px 0px 0px;
+    width: 14.3vw;
+}
+
+@media only screen and (max-width:600px){
+.kartica{
+    display: flex;
+    flex-direction: column;
+}
+
+.Prvi{
+  border: #212121 2px double;
+  background-color: #212121;
+  color: aliceblue;
+  width: 320px;
+  height: 50px;
+  text-align: center;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.Drugi{
+    display: flex;
+    width: 325px;
+    height: 50px;
+}
+
+.Treci{
+    width: 150px;
+    background-color: #4F5165;
+    height:35px;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.Cetvrti{
+    width: 170px;
+    height: 35px;
+    background-color: #f8f9fa;
+    color: #212121;
+    text-align: center;
+    }   
+
+.zadnjaStranica{
+    border-radius: 0px 0px 0px 0px;
+    width: 170px;
+}
+
+.treciRed{
+    margin-top: -15px;
+ }
+}
